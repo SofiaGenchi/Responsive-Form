@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+
+    <form id="survery-form" action="https://register-demo.freecodecamp.org">
+
+        <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Enter your name" required></label>
+
+        <label id="email-label">Enter Your Email: <input type="email" id="email" placeholder="your@email.com" required></label>
+
+        <label id="number-label">Enter Your Number: <input type="number" id="number" min="5" max="8" placeholder="Enter your phone number" required></label>
+        <fieldset>
+            <label>Selet one
+                <select id="dropdown">
+                    <option value="1">Option one</option>
+                    <option value="2">Option two</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+        <fieldset id="checkbox">
+            <h3>Checkbox</h3>
+            <label><input type="checkbox" value="1">Opcion Uno</label>
+            <label><input type="checkbox" value="2">Opcion Dos</label>
+            <label><input type="checkbox" value="3">Opcion Tres</label>
+            <label><input type="checkbox" value="4">Opcion Cuatro</label>
+            <label><input type="checkbox" value="5">Opcion Cinco</label>
+            <label><input type="checkbox" value="6">Opcion Seis</label>
+
+            <label><input type="radio" name="account-type" value="1">Personal Account</label>
+            <label><input type="radio" name="account-type" value="2">Business Account</label>
+        </fieldset>
+        <fieldset>
+            <h3>Aditional Comments</h3>
+            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
